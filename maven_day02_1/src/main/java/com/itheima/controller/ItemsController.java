@@ -14,7 +14,6 @@ public class ItemsController {
 
     @Autowired
     private ItemsService itemsService;
-
     @RequestMapping("/findDetail")
     public String findDetail(Model model){
         Items items = itemsService.findById(1);
